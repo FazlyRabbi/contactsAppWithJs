@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ContuctApp</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <div class="container" >
+        <h1>Contact APP</h1>
+        <p class="lead">Now you can Manage you client data</p>
+      </div>
+    </div>
+    <div class="container">
+       
+      <div class="card card-body mb-3" id="card">
+        <form action="#" id="contactsForm">
+          <div class="form-group">
+            <label for="firstName">FirstName</label>
+            <input
+              type="text"
+              class="form-control mb-3"
+              id="firstName"
+              placeholder="enter your name"
+            />
+            <label for="lastName">lastName</label>
+            <input
+              type="text"
+              class="form-control  mb-3"
+              id="lastName"
+              placeholder="enter your lastname"
+            />
+            <label for="email">Email</label>
+            <input
+              type="text"
+              class="form-control  mb-3"
+              id="email"
+              placeholder="enter your email"
+            />
+            <label for="phoneNumber">phoneNumber</label>
+            <input
+              type="text"
+              class="form-control  mb-3"
+              id="phoneNumber"
+              placeholder="enter your phone number"
+            />
+          </div>
+          <input type="text" id="contacsId" hidden>
+          <button class="btn btn-block btn-primary" id="contuctSubmit">
+            Submit Contuct
+          </button>
+          <div id="formEnd"></div>
+        </form>
+      </div>
+
+      <div id="contacts">
+        <!--contacts-->
+      </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
